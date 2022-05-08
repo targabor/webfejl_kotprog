@@ -1,0 +1,11 @@
+<table>
+  <tr *ngFor="let post of posts; let i = index;"
+      [ngStyle]="{'background-color' : i % 2 === 0 ? 'darkcyan' : 'cyan'}">
+    <div class="main_component">
+      <h3>{{post.title}}</h3>
+      <p>{{post.post_date  | dateformat}}</p>
+      <p>{{post.full_post}}</p>
+    </div>
+    <mat-divider></mat-divider>
+  </tr>
+</table>

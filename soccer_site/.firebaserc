@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "soccer-site-kotprog": {
+      "hosting": {
+        "soccer_site": [
+          "soccer-site-kotprog"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "soccer-site-kotprog"
+  }
+}

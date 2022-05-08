@@ -1,0 +1,13 @@
+<div class="main_component">
+  <h1>Welcome to the home of football!</h1>
+  <h3>(Scroll down for our latest post)</h3>
+</div>
+<table>
+  <tr *ngFor="let post of posts; let i = index;"
+ [ngStyle]="{'background-color' : i % 2 === 0 ? 'darkcyan' : 'cyan'}">
+    <div class="main_component">
+      <h3>{{post.title}}</h3>
+      <p>{{post.full_post}}</p>
+      <h2>If you are intrested in more, then login or register, to get full access to our all post.</h2>
+    </div>
+  </tr></table>
